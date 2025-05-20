@@ -1,4 +1,3 @@
-Resposta Dissertativa – Q3
 O sistema de Gerenciamento de Computadores modela uma relação de composição entre Computador e PlacaMae. Cada computador possui exatamente uma placa-mãe, criada internamente no momento da construção e destruída junto com ele. Isso reflete uma forte dependência, onde a PlacaMae não existe de forma independente.
 
 No diagrama UML, essa composição é unidirecional e representada por um losango preto da classe Computador apontando para PlacaMae, com multiplicidade 1 para 1.
