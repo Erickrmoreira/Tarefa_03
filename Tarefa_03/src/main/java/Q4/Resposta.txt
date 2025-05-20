@@ -1,0 +1,9 @@
+O sistema de Gerenciamento de Hospitais aplica os relacionamentos de composição, agregação e associação para refletir diferentes níveis de dependência entre entidades.
+
+A composição ocorre entre Hospital e UnidadeAtendimento, pois unidades como UPA ou enfermaria não existem fora do hospital. Ao remover um hospital, suas unidades também são destruídas.
+
+A agregação liga UnidadeAtendimento e Medico. Médicos podem atuar em várias unidades, inclusive de hospitais diferentes, mantendo independência de ciclo de vida. A relação é bidirecional.
+
+A associação conecta Medico e Paciente por meio da classe Consulta, que representa atendimentos clínicos pontuais, sem vínculo direto entre as existências de médico e paciente.
+
+A modelagem segue os princípios da POO, com atributos privados e métodos como adicionarMedico, agendarConsulta e exibirDetalhes. A classe Consulta registra data, médico e paciente da consulta. O sistema garante encapsulamento, reusabilidade e consistência, representando fielmente o funcionamento de um ambiente hospitalar.

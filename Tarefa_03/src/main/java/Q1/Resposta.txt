@@ -1,0 +1,6 @@
+No sistema de Controle de Veículos Pessoais, a relação entre Pessoa e Carro é uma associação bidirecional: uma pessoa pode dirigir vários carros (lista carrosDirigidos) e um carro pode ter no máximo um motorista atual (motoristaAtual). O diagrama UML expressa essa relação com multiplicidade 1 para * (Pessoa → Carro) e 0..1 para 1 (Carro → Pessoa).
+
+No código, o método usarCarro em Pessoa atualiza o motoristaAtual do carro e registra o carro na lista da pessoa, sem remover associações anteriores, garantindo o histórico completo. O método dirigir em Carro mostra quem o está conduzindo no momento.
+
+O modelo respeita o encapsulamento com atributos privados e acesso via getters. A associação é dinâmica, permitindo trocas de motoristas, e o histórico de direção é mantido conforme o enunciado. A lógica corrigida evita perda de dados anteriores, garantindo consistência e reusabilidade. A saída do programa confirma esse comportamento ao exibir corretamente os carros dirigidos por cada pessoa.
+
